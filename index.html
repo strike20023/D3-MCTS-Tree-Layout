@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Tree Layout Visualizer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>🌳 D3.js Tree Layout Visualizer</h1>
+        <div id="error-container"></div>
+        <div id="tree-container"></div>
+        <div id="stats-container"></div>
+        <div class="controls">
+            
+            <div class="zoom-controls">
+                <button class="zoom-btn" onclick="zoomIn()">+</button>
+                <button class="zoom-btn" onclick="zoomOut()">−</button>
+                <button class="zoom-btn" onclick="resetZoom()">⌂</button>
+                <button class="zoom-btn" onclick="rollout()">▶</button>
+                <div class="large-textarea">
+                    <span class="slider-label">step:</span>
+                    <input type="range" class="custom-slider" min="0" max="1" value="0" id="step-slider">
+                    <span class="slider-value" id="step-value">0</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+    </script>
+</body>
+</html>
